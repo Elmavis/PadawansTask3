@@ -6,6 +6,8 @@ namespace PadawansTask3
     {
         public static int Gcd(int a, int b)
         {
+            if (a == 0 && b == b)
+                throw new ArgumentException();
             a = Math.Abs(a);
             b = Math.Abs(b);
             while (a != 0 && b != 0)
